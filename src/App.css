@@ -1,0 +1,109 @@
+.overlay {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #F3EFE0;
+  height:100vh;
+  min-width: 100%;
+
+}
+
+.App-logo {
+  height: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #222222;
+  width: 100%;
+  min-height: 10vh;
+  padding: 20px;
+  color: white;
+}
+
+.upload-ccl{
+  min-height: 20rem;
+  display: flex;
+  background-color: #434242;
+  min-width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.vl{
+  border-left: 4px solid #F3EFE0;
+  height: 15rem;
+}
+
+.ccl-info{
+  min-height: 15rem;
+  min-width: 35%;
+  background-color: #222222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ccl-inner{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.ccl-inner label{
+  color: #fff;
+}
+
+.ccl-inner input{
+  border-radius: 5px;
+  border-color: #F3EFE0;
+  height: 25px;
+  font-size:medium;
+}
+
+.btn {
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.calc-del-btns{
+  margin-top: 2rem;
+  height: 6rem;
+  width: 17rem;
+  background-color: #0A2647;
+  color: #fff;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.calc-del-btns:hover{
+  height: 6.5rem;
+  width: 17.5rem;
+}

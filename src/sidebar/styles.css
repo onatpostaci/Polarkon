@@ -1,0 +1,139 @@
+.normal{
+  display: flex;
+  width: 100%;
+}
+.toggled{
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 3.7%;
+  height: 100%;
+  background: #434242;
+  transition: width 0.4s;
+}
+
+.toggled .sidebar {
+  width: 15%;
+}
+
+.sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-burger {
+  width: 6%;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  background: url(./assets/icon-burger.svg) no-repeat center center;
+  transition: 0.3s;
+}
+
+.sidebar-burger-toggled {
+  background: url(./assets/icon-close.svg) no-repeat center center;
+}
+
+.sidebar-logo {
+  height: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.toggled .sidebar-logo {
+  opacity: 1;
+}
+
+.sidebar-nav {
+  padding-top: 10px;
+  flex: 1 1 auto;
+}
+
+.sidebar button {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  height: 50px;
+  width: 72px;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 25px;
+  margin-top: 1rem;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.sidebar button:hover{
+  background-color: #222222;
+  opacity: 2;
+}
+
+.sidebar button > div {
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.sidebar button > span {
+  color: #f9f9f9;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 10px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+.toggled .sidebar button > span {
+  opacity: 1;
+  animation: appear 0.3s both;
+}
+
+.home-btn{
+  background: url(./assets/icon-home.svg) no-repeat center center;;
+}
+
+.settings-btn{
+  background: url(./assets/icon-settings.svg) no-repeat center center;;
+}
+
+.levels-btn{
+  background: url(./assets/icon-levels.svg) no-repeat center center;;
+}
+
+.accounts-btn{
+  background: url(./assets/icon-accounts.svg) no-repeat center center;;
+}
+.logout-btn{
+  background: url(./assets/icon-lock.svg) no-repeat center center;;
+}
